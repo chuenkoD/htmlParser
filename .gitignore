@@ -1,0 +1,7 @@
+*.out
+*.exe
+*~
+*.doc
+*.docx
+*.pdf
+.vs
