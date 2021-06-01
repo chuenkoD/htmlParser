@@ -1,4 +1,5 @@
 #include "header.h"
+#include "parser.h"
 
 int main(int argc, char ** argv)
 {
@@ -22,4 +23,11 @@ int main(int argc, char ** argv)
 		else if (keycmp(argv[i], "a") && i + 1 < argc)
 			atr = argv[++i];
 	}
+	if (tag == 0 && atr == 0)
+	{
+		fprintf(stderr, "Error\n");
+		exit(1);
+	}
+	elHtml e = elHtml(tag, atr);
+	
 }
