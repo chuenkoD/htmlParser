@@ -29,5 +29,8 @@ int main(int argc, char ** argv)
 		exit(1);
 	}
 	elHtml e = elHtml(tag, atr);
-	
+	if (e.readHtml())
+	{
+
+	}
 }
