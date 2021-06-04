@@ -1,5 +1,5 @@
 #!/bin/bash
-a="./a.exe"
+a="./parser.exe"
 
 g++ *.cpp -o $a $1
 
