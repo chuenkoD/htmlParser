@@ -1,4 +1,5 @@
 #include "parser.h"
+#include "header.h"
 
 int isCumment(const char * str)
 {
