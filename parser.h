@@ -3,10 +3,10 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 #define BBUFSIZE 1024 * 1024
 #define SEPAR "\t\r\n /"
-#define SEPAREND ">"
 
 struct listWrd
 {

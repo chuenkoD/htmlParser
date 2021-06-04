@@ -5,3 +5,5 @@
 *.docx
 *.pdf
 .vs
+*.htm
+*.html

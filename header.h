@@ -3,6 +3,11 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <string.h>
+
+#ifdef _MSC_VER
+#define strcasecmp stricmp
+#endif
 
 using namespace std;
 

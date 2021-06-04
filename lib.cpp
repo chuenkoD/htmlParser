@@ -1,9 +1,5 @@
 #include "header.h"
 
-#ifdef _MSC_VER
-#define strcasecmp stricmp
-#endif
-
 int keycmp(const char * arg, const char * key)
 {
     if (arg && key)
