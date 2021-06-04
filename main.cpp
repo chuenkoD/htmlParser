@@ -28,11 +28,11 @@ int main(int argc, char ** argv)
 		fprintf(stderr, "Error\n");
 		exit(1);
 	}
-	elHtml * e = new elHtml(tag, atr);
-	if (e->readHtml())
+	elHtml e = elHtml(tag, atr);
+	if (e.readHtml())
 	{
-		cout << e->printList(0);
-		printf("afaf\n");
+		if (isAsc != -1)
+			e.sortList(isAsc);
+		cout << e.printList(0);
 	}
-	delete e;
 }

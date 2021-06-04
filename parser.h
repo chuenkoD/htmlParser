@@ -6,7 +6,6 @@
 #include <ctype.h>
 
 #define BBUFSIZE 1024 * 1024
-#define SEPAR "\t\r\n /"
 
 struct listWrd
 {
@@ -22,12 +21,11 @@ class elHtml
 	char * tag;
 	char * atr;
 	listWrd * l;
-	int readTag();
-	int readAtr();
 public:
-	void addWord(const char * str);
-	char * printList(char * b);
 	int readHtml();
+	void addWord(const char * str);
+	void sortList(int isAsc);
+	char * printList(char * b);
 	elHtml(const char * t, const char * a);
 	~elHtml();
 };

@@ -18,12 +18,12 @@ void help(const char* nm)
 {
     printf("application to parse html\n");
     printf("usage:\n");
-    printf("%s      [-?] [-v] [-asc | -desc] {-t tag | -a attribute}\nwhere\n", nm);
+    printf("%s      [-?] [-v] [-asc | -desc] [-t tag] -a attribute\nwhere\n", nm);
     printf("-?      this page\n");
     printf("-v      to show additional info\n");
     printf("-asc    set the ascending order of sorting\n");
     printf("-desc   set the ascending order of sorting\n");
-    printf("-t tag  set the tag to search\n");
+    printf("-t tag  set the tag to filter attributes\n");
     printf("-a atr  set the attribute to search\n");
     exit(1);
 }
