@@ -11,6 +11,7 @@ $ git clone https://github.com/chuenkoD/htmlParser
 $ cd htmlParser
 ```
 3. Compile the program or run script test.sh:
+
 GCC:
 ```bash
 $ g++ *.cpp /o parser.exe
